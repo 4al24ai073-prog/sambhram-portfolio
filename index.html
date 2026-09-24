@@ -1,361 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sambhram | Portfolio</title>
+```
+<title>Sambhram | AI & ML Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+```
+
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+```
+<div class="background-effects">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+</div>
 
-    <header>
-        <nav class="navbar">
+<header class="navbar">
+    <div class="nav-container">
 
-            <div class="logo">
-                SAMBHRAM
-            </div>
+        <a href="index.html" class="logo">
+            <span>&lt;</span> Sambhram <span>/&gt;</span>
+        </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
         </nav>
-    </header>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+</header>
 
 
-    <!-- ================= HOME ================= -->
+<main>
 
-    <section id="home" class="hero">
+    <section class="hero">
 
         <div class="hero-content">
 
-            <p class="hello">Hello, I'm</p>
+            <p class="small-heading">
+                HELLO, I'M
+            </p>
 
-            <h1>SAMBHRAM</h1>
+            <h1>
+                Sambhram
+            </h1>
 
-            <h2>AI & Machine Learning Student</h2>
+            <h2>
+                AI & ML Student <span>•</span> Developer
+            </h2>
 
             <p class="hero-description">
-                I am a passionate student interested in Artificial Intelligence,
-                Data Science, Machine Learning and Software Development.
-                I love learning new technologies and building useful projects.
-                I Wanna learn more and contribute to the world of technology.
+                I am passionate about Artificial Intelligence, Machine Learning,
+                Computer Vision and Web Development. I enjoy building technology
+                that solves real-world problems.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn">
-                    View My Projects
+                <a href="projects.html" class="btn primary-btn">
+                    Explore My Work
                 </a>
 
-                <a href="#contact" class="btn btn-outline">
+                <a href="contact.html" class="btn secondary-btn">
                     Contact Me
                 </a>
 
             </div>
 
-            <!-- Social Links -->
-
             <div class="social-links">
 
-                <a href="https://www.instagram.com/sambhram_b/"
-                   target="_blank"
-                   title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/4al24ai073-prog"
-                   target="_blank"
-                   title="GitHub">
+                <a href="https://github.com/" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/sambhram-b-4a1a5b23/"
-                   target="_blank"
-                   title="LinkedIn">
+                <a href="https://linkedin.com/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
 
-                <a href="mailto:sambhrambbhandary@gmail.com"
-                   title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-                <a href="tel:+916361218309"
-                   title="Phone">
-                    <i class="fas fa-phone"></i>
+                <a href="https://instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
                 </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <div class="hero-visual">
 
-    <!-- ================= ABOUT ================= -->
+            <div class="tech-circle circle-one"></div>
+            <div class="tech-circle circle-two"></div>
 
-    <section id="about" class="section">
+            <div class="hero-card">
 
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-image">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
-
-            <div class="about-text">
-
-                <h3>I'm an AI & Machine Learning Student</h3>
-
-                <p>
-                    Hello! I'm Sambhram, a student passionate about
-                    Artificial Intelligence, Data Science and technology.
-                </p>
-
-                <p>
-                    I enjoy solving programming problems, learning new
-                    technologies and creating projects that help me improve
-                    my technical skills.
-                </p>
-
-                <p>
-                    My current interests include Machine Learning,
-                    Artificial Intelligence, Data Science, Web Development
-                    and Software Engineering.
-                </p>
-
-                <div class="about-info">
-
-                    <div>
-                        <strong>Name:</strong>
-                        <span>Sambhram</span>
-                    </div>
-
-                    <div>
-                        <strong>Branch:</strong>
-                        <span>AI & Machine Learning</span>
-                    </div>
-
-                    <div>
-                        <strong>Location:</strong>
-                        <span>India</span>
-                    </div>
-
+                <div class="code-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section skills-section">
-
-        <div class="section-title">
-            <p>WHAT I KNOW</p>
-            <h2>My Skills</h2>
-        </div>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-                <p>Programming & Data Science</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>C</h3>
-                <p>Programming & Algorithms</p>
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section">
-
-        <div class="section-title">
-            <p>MY WORK</p>
-            <h2>Projects</h2>
-        </div>
-
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-
-                <h3>AI / Machine Learning Project</h3>
-
-                <p>
-                    Add your AI or Machine Learning project description here.
-                    Explain what problem your project solves and which
-                    technologies you used.
-                </p>
-
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>AI</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- Project 2 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-
-                <h3>Web Development Project</h3>
-
-                <p>
-                    Add your web development project description here.
-                    Mention the technologies and features of your project.
-                </p>
-
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- Project 3 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-
-                <h3>Data Science Project</h3>
-
-                <p>
-                    Add your Data Science project description here.
-                    Mention the dataset, analysis and technologies used.
-                </p>
-
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Data Science</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section id="education" class="section education-section">
-
-        <div class="section-title">
-            <p>MY JOURNEY</p>
-            <h2>Education</h2>
-        </div>
-
-        <div class="education-container">
-
-            <div class="education-card">
-
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-
-                <div>
-
-                    <span class="education-year">
-                        2024 - Present
-                    </span>
-
-                    <h3>Bachelor in Engineering</h3>
-
-                    <h4>Artificial Intelligence & Machine Learning</h4>
+                <div class="code-content">
 
                     <p>
-                        Add your college name here.
+                        <span class="purple">const</span>
+                        developer =
                     </p>
 
-                </div>
+                    <p class="indent">
+                        {
+                    </p>
 
-            </div>
+                    <p class="indent-two">
+                        name:
+                        <span class="green">
+                            "Sambhram"
+                        </span>,
+                    </p>
 
+                    <p class="indent-two">
+                        field:
+                        <span class="blue">
+                            "AI & ML"
+                        </span>,
+                    </p>
 
-            <div class="education-card">
+                    <p class="indent-two">
+                        passion:
+                        <span class="pink">
+                            "Building"
+                        </span>
+                    </p>
 
-                <div class="education-icon">
-                    <i class="fas fa-school"></i>
-                </div>
-
-                <div>
-
-                    <span class="education-year">
-                        Previous Education
-                    </span>
-
-                    <h3>Pre-University / Higher Secondary</h3>
-
-                    <p>
-                        Studying in Alvas  institute of Engineering and Technology, Mangalore.
+                    <p class="indent">
+                        };
                     </p>
 
                 </div>
@@ -367,206 +166,63 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <section class="home-intro">
 
-    <section id="contact" class="section contact-section">
+        <p class="section-label">
+            WHAT I DO
+        </p>
 
-        <div class="section-title">
-            <p>GET IN TOUCH</p>
-            <h2>Contact Me</h2>
-        </div>
+        <h2>
+            Turning Ideas Into
+            <span>Digital Experiences</span>
+        </h2>
 
-        <div class="contact-container">
+        <div class="feature-grid">
 
-            <div class="contact-info">
-
-                <h3>Let's Connect</h3>
-
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
                 <p>
-                    Feel free to contact me for opportunities,
-                    projects, collaborations or just to say hello.
+                    Exploring intelligent systems, machine learning
+                    and AI-based solutions.
                 </p>
-
-
-                <!-- Email -->
-
-                <a href="mailto:sambhrambbhandary@gmail.com"
-                   class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-
-                    <div>
-                        <h4>Email</h4>
-                        <p>sambhrambbhandary@gmail.com</p>
-                    </div>
-
-                </a>
-
-
-                <!-- Phone -->
-
-                <a href="tel:+916361218309"
-                   class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+91 6361218309</p>
-                    </div>
-
-                </a>
-
-
-                <!-- Instagram -->
-
-                <a href="https://www.instagram.com/sambhram_b/"
-                   target="_blank"
-                   class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-
-                    <div>
-                        <h4>Instagram</h4>
-                        <p>@sambhram_b</p>
-                    </div>
-
-                </a>
-
-
-                <!-- GitHub -->
-
-                <a href="https://github.com/4al24ai073-prog"
-                   target="_blank"
-                   class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-
-                    <div>
-                        <h4>GitHub</h4>
-                        <p>github.com/4al24ai073-prog</p>
-                    </div>
-
-                </a>
-
-
-                <!-- LinkedIn -->
-
-                <a href="https://www.linkedin.com/in/sambhram-bhandary/"
-                   target="_blank"
-                   class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <p>LinkedIn Profile</p>
-                    </div>
-
-                </a>
-
             </div>
 
+            <div class="feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Computer Vision</h3>
+                <p>
+                    Working with image processing, object detection
+                    and visual intelligence.
+                </p>
+            </div>
 
-            <!-- Contact Form -->
-
-            <div class="contact-form">
-
-                <h3>Send Me a Message</h3>
-
-                <form id="contactForm">
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Sambhram Bhandary"
-                        required
-                    >
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="sambhrambbhandary@gmail.com"
-                        required
-                    >
-
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Contact me for opportunities, projects, collaborations or just to say hello."
-                        required
-                    ></textarea>
-
-                    <button type="submit" class="btn">
-                        Send Message
-                    </button>
-
-                </form>
-
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    Creating modern, responsive and user-friendly
+                    web experiences.
+                </p>
             </div>
 
         </div>
 
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-content">
-
-            <h3>SAMBHRAM</h3>
-
-            <p>
-                AI & Machine Learning Student | Passionate about Technology and Innovation
-            </p>
-
-            <div class="footer-socials">
-
-                <a href="https://www.instagram.com/sambhram_b/"
-                   target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/4al24ai073-prog"
-                   target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/sambhram-bhandary/"
-                   target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:sambhrambbhandary@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-            </div>
-
-            <p class="copyright">
-                © 2026 Sambhram. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
+</main>
 
 
-    <!-- JavaScript -->
+<footer>
 
-    <script src="script.js"></script>
+    <p>
+        © 2026 Sambhram. Built with passion and code.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+```
 
 </body>
 </html>

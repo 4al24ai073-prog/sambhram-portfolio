@@ -1,39 +1,47 @@
-// ================= MOBILE MENU =================
-
-const menuIcon = document.querySelector(".menu-icon");
-const navLinks = document.querySelector(".nav-links");
-
-menuIcon.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
-
-
-// Close menu after clicking a link
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-    });
-
-});
-
-
-// ================= CONTACT FORM =================
-
 const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", function(event) {
+if (contactForm) {
+    contactForm.addEventListener("submit", async function(event) {
+        event.preventDefault();
 
-    event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
-    const name = document.getElementById("name").value;
+        try {
+            const response = await fetch(
+                "http://localhost:5000/api/messages",
+                {
+                    method: "POST",
 
-    alert(
-        "Thank you " + name +
-        "! Your message has been received."
-    );
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
 
-    contactForm.reset();
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message
+                    })
+                }
+            );
 
-});
+            const data = await response.json();
+
+            if (data.success) {
+                alert("Message sent successfully!");
+
+                contactForm.reset();
+            } else {
+                alert(data.message);
+            }
+
+        } catch (error) {
+            console.error("Error:", error);
+
+            alert(
+                "Unable to send message. Make sure the backend is running."
+            );
+        }
+    });
+}
